@@ -11,3 +11,11 @@ function calculateTip(bill,tip){
     return bill * tip;
 }
 console.log(`Total Tip for $100 bill: $${calculateTip(100,0.20)}`);
+
+// Task 4: Utilize Arrays
+//array of bill prices
+let bills = [275,40,430];
+//array of tips and totals
+const tips = bills.map(bill => calculateTip(bill));
+console.log("Bill Amounts: ", bills)
+console.log("Tip Amounts: ", tips);
